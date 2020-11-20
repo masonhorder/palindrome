@@ -5,10 +5,9 @@ def isPalindrome(stringInQuestion):
 def largestPalindrome(stringPalindrome):
     strSplit = list(stringPalindrome)
     print(strSplit)
-    loopCount = 0
     maxString = strSplit[0]
     maxInt = 1
-    while loopCount < len(strSplit): 
+    for loopCount in range(len(strSplit)): 
         runningIndex = len(strSplit)-loopCount #length of input minus what number your number you are on
         runningIndex2 = 0
         runningString = ""
@@ -21,7 +20,6 @@ def largestPalindrome(stringPalindrome):
                     maxString = runningString
                     maxInt = len(runningString)
             
-        loopCount += 1
     return maxString
 
-print(largestPalindrome("jhdgkjnasdfgkjhsajghkasjdghkladjgmadsvjkkaskkskjsdgkjhdsgakjdhirpuasdfuhsadgiucgnsfghiuxahfgaijgnkjafshgiufghkfjshhjgascmghgghhghhghghhhhadfjhkjhdsmaaaaaaamgiurmomdad"))
+print(largestPalindrome("kjbdhfgadsgsdkjfghsdghjmmsjjgjjjgjjjgjkkkhyeeihlahiauwethuhkllllllzmaaaaaamm"))
